@@ -1,0 +1,52 @@
+-- [[ This file has data for a mesh ]]
+
+-- return mesh data as a table
+return
+{
+	-- This table contains vertices in the mesh
+	vertices = 
+	{
+		-- 0
+		{
+			position = { -20, -2.22045e-15, 10, },
+			normal = { 0, 1, 2.22045e-16, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 2.22045e-16, -1, },
+			texture_coordinates = { 0, 0.0967276, },
+			color = { 1, 1, 1, 1, },
+		},
+		-- 1
+		{
+			position = { 20, -2.22045e-15, 10, },
+			normal = { 0, 1, 2.22045e-16, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 2.22045e-16, -1, },
+			texture_coordinates = { 1, 0.0967276, },
+			color = { 1, 1, 1, 1, },
+		},
+		-- 2
+		{
+			position = { -20, 2.22045e-15, -10, },
+			normal = { 0, 1, 2.22045e-16, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 2.22045e-16, -1, },
+			texture_coordinates = { 0, 0.596728, },
+			color = { 1, 1, 1, 1, },
+		},
+		-- 3
+		{
+			position = { 20, 2.22045e-15, -10, },
+			normal = { 0, 1, 2.22045e-16, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 2.22045e-16, -1, },
+			texture_coordinates = { 1, 0.596728, },
+			color = { 1, 1, 1, 1, },
+		},
+	},
+	-- This table contains indices for triangles in the mesh
+	indices =  
+	{
+		{ 0, 1, 2, },
+		{ 2, 1, 3, },
+	},
+}

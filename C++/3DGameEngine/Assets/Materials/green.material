@@ -1,0 +1,11 @@
+-- [[This file has a color path to an effect]]
+
+-- return data as table
+return
+{
+	parameters = 
+	{
+		color = { 0.0, 1.0, 0.0, 1.0 },
+	},
+	effectPath = "Effects/standard.effect",
+}

@@ -1,0 +1,17 @@
+-- [[This file path to vertex and fragment shader]]
+
+-- return paths as a table
+return
+{
+	renderStates =
+	{
+		alphaTransparency = true,
+		depthBuffering = false,
+		drawBothTriangleSides = true,
+	},
+	shaderPaths =
+	{
+		vertex = "Shaders/spriteVertex.shader",
+		fragment = "Shaders/fragment.shader",
+	}
+}

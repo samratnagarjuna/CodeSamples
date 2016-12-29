@@ -1,0 +1,37 @@
+-- [[ This file has data for a colored plane mesh ]]
+
+-- return mesh data as a table
+return
+{
+	-- This table contains vertices in the mesh
+	vertices =
+	{
+		-- 0
+		{
+			position = { -5.0, 0.0, 5.0 },
+			color = {1.0, 1.0, 1.0, 1.0}
+		},
+		-- 1
+		{
+			position = { 5.0, 0.0, 5.0 },
+			color = {1.0, 1.0, 1.0, 1.0}
+		},
+		-- 2
+		{
+			position = { 5.0, 0.0, -5.0 },
+			color = {1.0, 1.0, 1.0, 1.0}
+		},
+		-- 3
+		{
+			position = { -5.0, 0.0, -5.0 },
+			color = {1.0, 1.0, 1.0, 1.0}
+		},
+	},
+	-- This table contains indices for triangles in the mesh
+	indices =
+	{
+		-- front face
+		{0, 1, 2},
+		{0, 2, 3}
+	}
+}

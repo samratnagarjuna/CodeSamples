@@ -1,0 +1,30 @@
+-- [[ This file has data for a colored triangle mesh ]]
+
+-- return mesh data as a table
+return
+{
+	-- This table contains vertices in the mesh
+	vertices =
+	{
+		-- 0
+		{
+			position = { -0.1, -0.1, 0.0 },
+			color = {1.0, 0.0, 0.0, 1.0}
+		},
+		-- 1
+		{
+			position = { 0.1, -0.1, 0.0 },
+			color = {0.0, 1.0, 0.0, 1.0}
+		},
+		-- 2
+		{
+			position = { 0.0, 0.1 , 0.0},
+			color = {1.0, 1.0, 1.0, 1.0}
+		}
+	},
+	-- This table contains indices for triangles in the mesh
+	indices =
+	{
+		{0, 1, 2}
+	}
+}

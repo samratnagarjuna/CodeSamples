@@ -1,0 +1,17 @@
+-- [[This file path to vertex and fragment shader]]
+
+-- return paths as a table
+return
+{
+	renderStates =
+	{
+		alphaTransparency = false,
+		depthBuffering = true,
+		drawBothTriangleSides = false,
+	},
+	shaderPaths =
+	{
+		vertex = "Shaders/oscillateVertex.shader",
+		fragment = "Shaders/oscillateFragment.shader",
+	}
+}

@@ -1,0 +1,394 @@
+-- [[ This file has data for a mesh ]]
+
+-- return mesh data as a table
+return
+{
+	-- This table contains vertices in the mesh
+	vertices = 
+	{
+		-- 0
+		{
+			position = { -0.5, -0.5, 0.5, },
+			normal = { 0, 0, 1, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.375, 0, },
+			color = { 0.2823, 0.4117, 0.047, 1, },
+		},
+		-- 1
+		{
+			position = { -0.5, -0.5, 0.5, },
+			normal = { 0, -1, 0, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, 0, 1, },
+			texture_coordinates = { 0.375, 1, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 2
+		{
+			position = { -0.5, -0.5, 0.5, },
+			normal = { -1, 0, 0, },
+			tangent = { 0, -0, 1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.375, 0, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 3
+		{
+			position = { -0.5, -0.5, -0.5, },
+			normal = { 0, 0, -1, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, -1, 0, },
+			texture_coordinates = { 0.375, 0.75, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 4
+		{
+			position = { -0.5, -0.5, -0.5, },
+			normal = { 0, -1, 0, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, 0, 1, },
+			texture_coordinates = { 0.375, 0.75, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 5
+		{
+			position = { -0.5, -0.5, -0.5, },
+			normal = { -1, 0, 0, },
+			tangent = { 0, -0, 1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.125, 0, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 6
+		{
+			position = { 0.5, -0.5, -0.5, },
+			normal = { 0, 0, -1, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, -1, 0, },
+			texture_coordinates = { 0.625, 0.75, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 7
+		{
+			position = { 0.5, -0.5, -0.5, },
+			normal = { 0, -1, 0, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, 0, 1, },
+			texture_coordinates = { 0.625, 0.75, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 8
+		{
+			position = { 0.5, -0.5, -0.5, },
+			normal = { 1, 0, 0, },
+			tangent = { 0, 0, -1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.875, 0, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 9
+		{
+			position = { 0.5, -0.5, 0.5, },
+			normal = { 0, -1, 0, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, 0, 1, },
+			texture_coordinates = { 0.625, 1, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 10
+		{
+			position = { 0.5, -0.5, 0.5, },
+			normal = { 0, 0, 1, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.625, 0, },
+			color = { 0.2823, 0.4117, 0.047, 1, },
+		},
+		-- 11
+		{
+			position = { 0.5, -0.5, 0.5, },
+			normal = { 1, 0, 0, },
+			tangent = { 0, 0, -1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.625, 0, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 12
+		{
+			position = { -0.5, 0, 0.5, },
+			normal = { -1, 0, 0, },
+			tangent = { 0, -0, 1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.375, 0.125, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 13
+		{
+			position = { -0.5, 0, 0.5, },
+			normal = { -1, 0, 0, },
+			tangent = { 0, -0, 1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.375, 0.125, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 14
+		{
+			position = { -0.5, 0, 0.5, },
+			normal = { 0, 0, 1, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.375, 0.125, },
+			color = { 0.2823, 0.4117, 0.047, 1, },
+		},
+		-- 15
+		{
+			position = { -0.5, 0, 0.5, },
+			normal = { 0, 0, 1, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.375, 0.125, },
+			color = { 0.0156, 0.0156, 0.0156, 1, },
+		},
+		-- 16
+		{
+			position = { 0.5, 0, 0.5, },
+			normal = { 1, 0, 0, },
+			tangent = { 0, 0, -1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.625, 0.125, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 17
+		{
+			position = { 0.5, 0, 0.5, },
+			normal = { 1, 0, 0, },
+			tangent = { 0, 0, -1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.625, 0.125, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 18
+		{
+			position = { 0.5, 0, 0.5, },
+			normal = { 0, 0, 1, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.625, 0.125, },
+			color = { 0.2823, 0.4117, 0.047, 1, },
+		},
+		-- 19
+		{
+			position = { 0.5, 0, 0.5, },
+			normal = { 0, 0, 1, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.625, 0.125, },
+			color = { 0.0156, 0.0156, 0.0156, 1, },
+		},
+		-- 20
+		{
+			position = { -0.5, 0.5, 0.5, },
+			normal = { -1, 0, 0, },
+			tangent = { 0, -0, 1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.375, 0.25, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 21
+		{
+			position = { -0.5, 0.5, 0.5, },
+			normal = { 0, 0, 1, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.375, 0.25, },
+			color = { 0.0156, 0.0156, 0.0156, 1, },
+		},
+		-- 22
+		{
+			position = { -0.5, 0.5, 0.5, },
+			normal = { 0, 1, 0, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 0, -1, },
+			texture_coordinates = { 0.375, 0.25, },
+			color = { 0, 0, 0, 1, },
+		},
+		-- 23
+		{
+			position = { 0.5, 0.5, 0.5, },
+			normal = { 1, 0, 0, },
+			tangent = { 0, 0, -1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.625, 0.25, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 24
+		{
+			position = { 0.5, 0.5, 0.5, },
+			normal = { 0, 0, 1, },
+			tangent = { 1, -0, 0, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.625, 0.25, },
+			color = { 0.0156, 0.0156, 0.0156, 1, },
+		},
+		-- 25
+		{
+			position = { 0.5, 0.5, 0.5, },
+			normal = { 0, 1, 0, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, 0, -1, },
+			texture_coordinates = { 0.625, 0.25, },
+			color = { 0, 0, 0, 1, },
+		},
+		-- 26
+		{
+			position = { -0.5, 0.5, -0.5, },
+			normal = { 0, 0, -1, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, -1, 0, },
+			texture_coordinates = { 0.375, 0.5, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 27
+		{
+			position = { -0.5, 0.5, -0.5, },
+			normal = { -1, 0, 0, },
+			tangent = { 0, -0, 1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.125, 0.25, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 28
+		{
+			position = { -0.5, 0.5, -0.5, },
+			normal = { 0, 1, 0, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, 0, -1, },
+			texture_coordinates = { 0.375, 0.5, },
+			color = { 0, 0, 0, 1, },
+		},
+		-- 29
+		{
+			position = { 0.5, 0.5, -0.5, },
+			normal = { 0, 0, -1, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, -1, 0, },
+			texture_coordinates = { 0.625, 0.5, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 30
+		{
+			position = { 0.5, 0.5, -0.5, },
+			normal = { 1, 0, 0, },
+			tangent = { 0, 0, -1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.875, 0.25, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 31
+		{
+			position = { 0.5, 0.5, -0.5, },
+			normal = { 0, 1, 0, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, 0, -1, },
+			texture_coordinates = { 0.625, 0.5, },
+			color = { 0, 0, 0, 1, },
+		},
+		-- 32
+		{
+			position = { -0.5, 0, -0.5, },
+			normal = { 0, 0, -1, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, -1, 0, },
+			texture_coordinates = { 0.375, 0.625, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 33
+		{
+			position = { -0.5, 0, -0.5, },
+			normal = { 0, 0, -1, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, -1, 0, },
+			texture_coordinates = { 0.375, 0.625, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 34
+		{
+			position = { -0.5, 0, -0.5, },
+			normal = { -1, 0, 0, },
+			tangent = { 0, -0, 1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.125, 0.125, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 35
+		{
+			position = { -0.5, 0, -0.5, },
+			normal = { -1, 0, 0, },
+			tangent = { 0, -0, 1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.125, 0.125, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 36
+		{
+			position = { 0.5, 0, -0.5, },
+			normal = { 0, 0, -1, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, -1, 0, },
+			texture_coordinates = { 0.625, 0.625, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+		-- 37
+		{
+			position = { 0.5, 0, -0.5, },
+			normal = { 0, 0, -1, },
+			tangent = { 1, 0, 0, },
+			bi_tangent = { 0, -1, 0, },
+			texture_coordinates = { 0.625, 0.625, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 38
+		{
+			position = { 0.5, 0, -0.5, },
+			normal = { 1, 0, 0, },
+			tangent = { 0, 0, -1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.875, 0.125, },
+			color = { 0.5215, 0.7686, 0.0784, 1, },
+		},
+		-- 39
+		{
+			position = { 0.5, 0, -0.5, },
+			normal = { 1, 0, 0, },
+			tangent = { 0, 0, -1, },
+			bi_tangent = { 0, 1, 0, },
+			texture_coordinates = { 0.875, 0.125, },
+			color = { 0.034, 0.034, 0.034, 1, },
+		},
+	},
+	-- This table contains indices for triangles in the mesh
+	indices =  
+	{
+		{ 0, 10, 14, },
+		{ 1, 7, 9, },
+		{ 3, 37, 6, },
+		{ 4, 7, 1, },
+		{ 5, 2, 34, },
+		{ 11, 8, 16, },
+		{ 14, 10, 18, },
+		{ 15, 19, 21, },
+		{ 16, 8, 38, },
+		{ 17, 39, 23, },
+		{ 21, 19, 24, },
+		{ 22, 25, 28, },
+		{ 23, 39, 30, },
+		{ 26, 29, 32, },
+		{ 27, 13, 20, },
+		{ 28, 25, 31, },
+		{ 32, 29, 36, },
+		{ 33, 37, 3, },
+		{ 34, 2, 12, },
+		{ 35, 13, 27, },
+	},
+}

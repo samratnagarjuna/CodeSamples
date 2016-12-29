@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Direct3D">
+      <UniqueIdentifier>{0f38ec15-d3a3-4e4d-987f-efd3002b48e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{998e3278-2037-4016-8d22-4587848b8c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{02640ca5-0875-430d-9f94-1b3d32195401}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cTexture">
+      <UniqueIdentifier>{1a48898c-96e1-42ef-895c-e784f70e7b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cRenderState">
+      <UniqueIdentifier>{65c87545-fd1c-4685-a112-0b7a1157dc92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="OpenGL\Graphics.gl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D\Graphics.d3d.cpp">
+      <Filter>Direct3D</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\MeshRenderer.gl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D\MeshRenderer.d3d.cpp">
+      <Filter>Direct3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshRenderer.cpp" />
+    <ClCompile Include="Direct3D\RenderContext.d3d.cpp">
+      <Filter>Direct3D</Filter>
+    </ClCompile>
+    <ClCompile Include="cConstantBuffer.cpp" />
+    <ClCompile Include="OpenGL\cConstantBuffer.gl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D\cConstantBuffer.d3d.cpp">
+      <Filter>Direct3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\cMatrix_transformation.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\cQuaternion.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\cVector.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Functions.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Direct3D\cEffect.d3d.cpp">
+      <Filter>Direct3D</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\cEffect.gl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="cEffect.cpp" />
+    <ClCompile Include="cMaterial.cpp" />
+    <ClCompile Include="cTexture\cTexture.cpp">
+      <Filter>cTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\cTexture.gl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D\cTexture.d3d.cpp">
+      <Filter>Direct3D</Filter>
+    </ClCompile>
+    <ClCompile Include="cSprite.cpp" />
+    <ClCompile Include="OpenGL\cSprite.gl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D\cSprite.d3d.cpp">
+      <Filter>Direct3D</Filter>
+    </ClCompile>
+    <ClCompile Include="cRenderState\cRenderState.cpp">
+      <Filter>cRenderState</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D\cRenderState.d3d.cpp">
+      <Filter>Direct3D</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\cRenderState.gl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Configuration.h" />
+    <ClInclude Include="OpenGL\Includes.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshRenderer.h" />
+    <ClInclude Include="Includes.h" />
+    <ClInclude Include="Direct3D\RenderContext.d3d.h">
+      <Filter>Direct3D</Filter>
+    </ClInclude>
+    <ClInclude Include="cConstantBuffer.h" />
+    <ClInclude Include="RenderInfo.h" />
+    <ClInclude Include="Math\cMatrix_transformation.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\cQuaternion.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\cVector.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Functions.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="cEffect.h" />
+    <ClInclude Include="cMaterial.h" />
+    <ClInclude Include="cTexture.h" />
+    <ClInclude Include="cTexture\Internal.h">
+      <Filter>cTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="cSprite.h" />
+    <ClInclude Include="cRenderState.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Math\Functions.inl">
+      <Filter>Math</Filter>
+    </None>
+    <None Include="cRenderState\cRenderState.inl">
+      <Filter>cRenderState</Filter>
+    </None>
+  </ItemGroup>
+</Project>

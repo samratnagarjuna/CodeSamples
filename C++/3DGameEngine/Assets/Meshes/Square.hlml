@@ -1,0 +1,72 @@
+-- [[ This file has data for a colored square mesh ]]
+
+-- return mesh data as a table
+return
+{
+	-- This table contains vertices in the mesh
+	vertices =
+	{
+		-- 0
+		{
+			position = { -1.0, -1.0, 1.0 },
+			color = {1.0, 0.0, 0.0, 1.0}
+		},
+		-- 1
+		{
+			position = { 1.0, -1.0, 1.0 },
+			color = {0.0, 1.0, 0.0, 1.0}
+		},
+		-- 2
+		{
+			position = { 1.0, 1.0, 1.0 },
+			color = {0.0, 0.0, 1.0, 1.0}
+		},
+		-- 3
+		{
+			position = { -1.0, 1.0, 1.0 },
+			color = {1.0, 0.0, 1.0, 1.0}
+		},
+		-- 4
+		{
+			position = { -1.0, -1.0, -1.0 },
+			color = {1.0, 0.0, 0.0, 1.0}
+		},
+		-- 5
+		{
+			position = { 1.0, -1.0, -1.0 },
+			color = {0.0, 1.0, 0.0, 1.0}
+		},
+		-- 6
+		{
+			position = { 1.0, 1.0, -1.0 },
+			color = {0.0, 0.0, 1.0, 1.0}
+		},
+		-- 7
+		{
+			position = { -1.0, 1.0, -1.0 },
+			color = {1.0, 0.0, 1.0, 1.0}
+		}
+	},
+	-- This table contains indices for triangles in the mesh
+	indices =
+	{
+		-- front face
+		{0, 1, 2},
+		{0, 2, 3},
+		-- back face
+		{4, 6, 5},
+		{4, 7, 6},
+		-- top face
+		{3, 2, 6},
+		{3, 6, 7},
+		-- bottom face
+		{0, 5, 1},
+		{0, 4, 5},
+		-- left face
+		{4, 0, 3},
+		{4, 3, 7},
+		-- right face
+		{5, 2, 1},
+		{5, 6, 2}
+	}
+}
