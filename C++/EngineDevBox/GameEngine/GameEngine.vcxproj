@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F11F13B5-A685-4A8E-9A85-B8B8BE87908B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine\ThirdParty\GLib\HeaderFiles\;$(ProjectDir)ThirdParty\Lua\HeaderFiles\;$(ProjectDir)HeaderFiles\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\Lua\Libs\$(Platform)\;$(ProjectDir)ThirdParty\GLib\Libs\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;GLib.lib;lua-5.3.2-$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine\ThirdParty\GLib\HeaderFiles\;$(ProjectDir)ThirdParty\Lua\HeaderFiles\;$(ProjectDir)HeaderFiles\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\Lua\Libs\$(Platform)\;$(ProjectDir)ThirdParty\GLib\Libs\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;GLib.lib;lua-5.3.2-$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine\ThirdParty\GLib\HeaderFiles\;$(ProjectDir)ThirdParty\Lua\HeaderFiles\;$(ProjectDir)HeaderFiles\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\Lua\Libs\$(Platform)\;$(ProjectDir)ThirdParty\GLib\Libs\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;GLib.lib;lua-5.3.2-$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine\ThirdParty\GLib\HeaderFiles\;$(ProjectDir)ThirdParty\Lua\HeaderFiles\;$(ProjectDir)HeaderFiles\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\Lua\Libs\$(Platform)\;$(ProjectDir)ThirdParty\GLib\Libs\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;GLib.lib;lua-5.3.2-$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HeaderFiles\Allocators\NStringPool.h" />
+    <ClInclude Include="HeaderFiles\Collision\NAABB.h" />
+    <ClInclude Include="HeaderFiles\Collision\NAABBCollider.h" />
+    <ClInclude Include="HeaderFiles\Collision\NCollisionManager.h" />
+    <ClInclude Include="HeaderFiles\Controller\NControllerManager.h" />
+    <ClInclude Include="HeaderFiles\Entities\NActor.h" />
+    <ClInclude Include="HeaderFiles\Entities\NIController.h" />
+    <ClInclude Include="HeaderFiles\Input\NInputManager.h" />
+    <ClInclude Include="HeaderFiles\Math\NMatrix3-inl.h" />
+    <ClInclude Include="HeaderFiles\Math\NMatrix3.h" />
+    <ClInclude Include="HeaderFiles\Math\NMatrix4-inl.h" />
+    <ClInclude Include="HeaderFiles\Math\NMatrix4.h" />
+    <ClInclude Include="HeaderFiles\Math\NVector4-inl.h" />
+    <ClInclude Include="HeaderFiles\Math\NVector4.h" />
+    <ClInclude Include="HeaderFiles\Message\NIMessageHandler.h" />
+    <ClInclude Include="HeaderFiles\Message\NMessageManager.h" />
+    <ClInclude Include="HeaderFiles\NEngine.h" />
+    <ClInclude Include="HeaderFiles\Entities\NGameObject.h" />
+    <ClInclude Include="HeaderFiles\Math\NVector3-inl.h" />
+    <ClInclude Include="HeaderFiles\Math\NVector3.h" />
+    <ClInclude Include="HeaderFiles\Physics\NPhysicsInfo.h" />
+    <ClInclude Include="HeaderFiles\Physics\NRigidBody.h" />
+    <ClInclude Include="HeaderFiles\Physics\NPhysicsManager.h" />
+    <ClInclude Include="HeaderFiles\Renderer\NRenderInfo.h" />
+    <ClInclude Include="HeaderFiles\Renderer\NRenderManager.h" />
+    <ClInclude Include="HeaderFiles\Renderer\NRenderer.h" />
+    <ClInclude Include="HeaderFiles\Scene\NAbstractScene.h" />
+    <ClInclude Include="HeaderFiles\Scene\NSceneManager.h" />
+    <ClInclude Include="HeaderFiles\Threading\NEvent.h" />
+    <ClInclude Include="HeaderFiles\Threading\NMutex.h" />
+    <ClInclude Include="HeaderFiles\Threading\NSemaphore.h" />
+    <ClInclude Include="HeaderFiles\Threading\NThreadedFileProcessor.h" />
+    <ClInclude Include="HeaderFiles\Threading\NWaitableObject.h" />
+    <ClInclude Include="HeaderFiles\Timing\NTiming-inl.h" />
+    <ClInclude Include="HeaderFiles\Timing\NTiming.h" />
+    <ClInclude Include="HeaderFiles\Utility\NConsolePrint.h" />
+    <ClInclude Include="HeaderFiles\Utility\NHashedString-inl.h" />
+    <ClInclude Include="HeaderFiles\Utility\NHashedString.h" />
+    <ClInclude Include="HeaderFiles\Utility\NLuaLoadActor.h" />
+    <ClInclude Include="HeaderFiles\Utility\NLuaUtility.h" />
+    <ClInclude Include="HeaderFiles\Utility\NSmartPtr-inl.h" />
+    <ClInclude Include="HeaderFiles\Utility\NSmartPtr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SourceFiles\Allocators\NStringPool.cpp" />
+    <ClCompile Include="SourceFiles\Collision\NAABBCollider.cpp" />
+    <ClCompile Include="SourceFiles\Collision\NCollisionManager.cpp" />
+    <ClCompile Include="SourceFiles\Controller\NControllerManager.cpp" />
+    <ClCompile Include="SourceFiles\Entities\NActor.cpp" />
+    <ClCompile Include="SourceFiles\Input\NInputManager.cpp" />
+    <ClCompile Include="SourceFiles\Math\NMatrix3.cpp" />
+    <ClCompile Include="SourceFiles\Math\NMatrix4.cpp" />
+    <ClCompile Include="SourceFiles\Math\NMatrix4.SSE.cpp" />
+    <ClCompile Include="SourceFiles\Math\NVector3.cpp" />
+    <ClCompile Include="SourceFiles\Math\NVector4.cpp" />
+    <ClCompile Include="SourceFiles\Message\NMessageManager.cpp" />
+    <ClCompile Include="SourceFiles\NEngine.cpp" />
+    <ClCompile Include="SourceFiles\Physics\NPhysicsManager.cpp" />
+    <ClCompile Include="SourceFiles\Physics\NRigidBody.cpp" />
+    <ClCompile Include="SourceFiles\Renderer\NRenderer.cpp" />
+    <ClCompile Include="SourceFiles\Renderer\NRenderManager.cpp" />
+    <ClCompile Include="SourceFiles\Scene\NSceneManager.cpp" />
+    <ClCompile Include="SourceFiles\Threading\NEvent.cpp" />
+    <ClCompile Include="SourceFiles\Threading\NMutex.cpp" />
+    <ClCompile Include="SourceFiles\Threading\NSemaphore.cpp" />
+    <ClCompile Include="SourceFiles\Threading\NThreadedFileProcessor.cpp" />
+    <ClCompile Include="SourceFiles\Timing\NTiming.cpp" />
+    <ClCompile Include="SourceFiles\Utility\NConsolePrint.cpp" />
+    <ClCompile Include="SourceFiles\Utility\NHashedString.cpp" />
+    <ClCompile Include="SourceFiles\Utility\NLuaLoadActor.cpp" />
+    <ClCompile Include="SourceFiles\Utility\NLuaUtility.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{279a2711-b60e-4689-a054-78394ee598e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{aa52a0c4-012e-4d8d-b835-24835118f9db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{7310220f-b6a0-41fc-90b4-afbfa3b349ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{b374fe89-7e75-4064-a695-19bff964231c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utility">
+      <UniqueIdentifier>{1f5515eb-8124-4e96-9e06-c3eb4e8721ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{94b585c4-b8a4-4924-96e5-1cf5d4e0d35d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Timing">
+      <UniqueIdentifier>{59ac3148-2220-4992-b67e-e9e85d28641a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Timing">
+      <UniqueIdentifier>{26d9ec17-847f-4038-b550-539d570531f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{be69caf5-3e58-41a1-b9eb-b556f89c4323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{bc928a52-f85c-4f6a-a36f-5b068096fb8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderer">
+      <UniqueIdentifier>{cd7cf4ba-b6cc-4fb3-aac7-b269586a0928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer">
+      <UniqueIdentifier>{18d43c95-552e-48e6-92b5-319aaecf3c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{d62a504f-29e0-42bd-b88c-d561da18a2ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{eb8d57a4-ef4d-4018-bbcc-e314a4eea5cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{c41a4632-409f-42a2-a105-281a7855021b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{c1fb884f-c48c-43b2-aba5-2c3bade5aaeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Message">
+      <UniqueIdentifier>{21e592a9-85b7-4d54-867c-ecd078465208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Message">
+      <UniqueIdentifier>{e4b99eba-9575-4ba0-83c0-a13915b50d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collision">
+      <UniqueIdentifier>{b737d9ba-3da4-4014-972c-37f21b03fe50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Collision">
+      <UniqueIdentifier>{3b24bc59-d2c7-4d40-b311-51e7f0e09cac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Allocators">
+      <UniqueIdentifier>{9c4665bb-bf0e-41d4-9e0b-69318e715540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Allocators">
+      <UniqueIdentifier>{16c79d6f-0f0a-41d4-ac74-63a3b3ed0552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Threading">
+      <UniqueIdentifier>{25fdf28c-e7cb-4d5d-bcf7-be23ae46b2c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Threading">
+      <UniqueIdentifier>{f662c998-d562-4db7-a647-08b252b44065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Controller">
+      <UniqueIdentifier>{3867e726-3f8b-408e-a21b-e9289bddb40b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controller">
+      <UniqueIdentifier>{2f094daf-2e44-4276-9d22-9023b15e2670}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HeaderFiles\Math\NVector3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Math\NVector3-inl.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Entities\NGameObject.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Utility\NSmartPtr.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Utility\NSmartPtr-inl.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Timing\NTiming.h">
+      <Filter>Header Files\Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Timing\NTiming-inl.h">
+      <Filter>Header Files\Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\NEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Physics\NPhysicsInfo.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Physics\NRigidBody.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Physics\NPhysicsManager.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Renderer\NRenderManager.h">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Renderer\NRenderInfo.h">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Renderer\NRenderer.h">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Entities\NActor.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Input\NInputManager.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Entities\NIController.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Scene\NAbstractScene.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Scene\NSceneManager.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Utility\NConsolePrint.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Utility\NHashedString.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Utility\NHashedString-inl.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Message\NMessageManager.h">
+      <Filter>Header Files\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Message\NIMessageHandler.h">
+      <Filter>Header Files\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Math\NVector4.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Math\NVector4-inl.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Math\NMatrix4.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Math\NMatrix4-inl.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Math\NMatrix3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Math\NMatrix3-inl.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Collision\NCollisionManager.h">
+      <Filter>Header Files\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Collision\NAABBCollider.h">
+      <Filter>Header Files\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Collision\NAABB.h">
+      <Filter>Header Files\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Allocators\NStringPool.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Threading\NMutex.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Threading\NWaitableObject.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Threading\NSemaphore.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Threading\NThreadedFileProcessor.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Threading\NEvent.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Utility\NLuaUtility.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Utility\NLuaLoadActor.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderFiles\Controller\NControllerManager.h">
+      <Filter>Header Files\Controller</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SourceFiles\Math\NVector3.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\NEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Timing\NTiming.cpp">
+      <Filter>Source Files\Timing</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Physics\NPhysicsManager.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Physics\NRigidBody.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Renderer\NRenderManager.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Renderer\NRenderer.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Entities\NActor.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Input\NInputManager.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Scene\NSceneManager.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Utility\NConsolePrint.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Utility\NHashedString.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Message\NMessageManager.cpp">
+      <Filter>Source Files\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Math\NVector4.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Math\NMatrix4.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Math\NMatrix4.SSE.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Math\NMatrix3.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Collision\NCollisionManager.cpp">
+      <Filter>Source Files\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Collision\NAABBCollider.cpp">
+      <Filter>Source Files\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Allocators\NStringPool.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Threading\NMutex.cpp">
+      <Filter>Source Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Threading\NSemaphore.cpp">
+      <Filter>Source Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Threading\NEvent.cpp">
+      <Filter>Source Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Threading\NThreadedFileProcessor.cpp">
+      <Filter>Source Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Utility\NLuaUtility.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Utility\NLuaLoadActor.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFiles\Controller\NControllerManager.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
